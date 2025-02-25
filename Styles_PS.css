@@ -1,0 +1,226 @@
+@font-face {
+    font-family: 'FuentePS';
+    src: url('Fonts_PS/playstation_by_lyricwest_dby5il4.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #0e1c2e;
+    background-image: url('Images_PS/Background2.jpg');
+    color: #fff;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    font-family: 'FuentePS', 'Arial', sans-serif;
+    background-color: #003b5c;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #f5f5f5;
+}
+
+/* Navbar */
+nav {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: #0085ca;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Main content */
+main {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Left Content */
+.content {
+    flex: 2;
+    background-color: #1e2a3a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Console Boxes */
+.console-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.console-box div {
+    background: rgba(25, 83, 126, 0.41); /* Fondo semitransparente */
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    flex: 1 1 calc(33.33% - 20px);
+    min-width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borde sutil */
+}
+
+
+.console-box div:hover {
+    transform: translateY(-5px);
+}
+
+.console-box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.3)); /* Sombra para resaltar la imagen */
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    background-color: #1e2a3a;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.sidebar h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.catalog {
+    font-family: 'FuentePS', 'Arial', sans-serif;
+}
+
+.catalog img {
+    border-radius: 8px;
+    text-align: center;
+    width: 70%;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+    
+}
+
+.catalog img:hover {
+    transform: translateY(-5px);
+}
+
+/* Fun Facts */
+.fun-facts {
+    background-color: #003a5ca4;
+    backdrop-filter: blur(5px);
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.SOP {
+    display: flex;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 10px; /* Espacio entre imágenes */
+}
+
+.fun-facts h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.fun-facts p{
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.fun-facts LI {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.fun-facts img{
+    border-radius: 8px;
+    text-align: center;
+    width: 50%;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.fun-facts img:hover{
+    transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+    background-color: #0e1c2e;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Animations*/
+
+@keyframes fade-slide {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+        
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main, nav, header, footer, body {
+    animation: fade-slide 0.5s ease-out;
+}
