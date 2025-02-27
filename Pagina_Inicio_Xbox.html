@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia de Xbox</title>
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            background-color: #0b3d0b;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+        }
+        .main-content {
+            flex: 2;
+            padding: 20px;
+            text-align: justify;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+        }
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            text-align: left;
+            margin-left: -60px;
+        }
+        .banner {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .banner img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .nav a, .news-button {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px 15px;
+            border: 1px solid white;
+            border-radius: 5px;
+            transition: background 0.3s;
+            display: inline-block;
+        }
+        .nav a:hover, .news-button:hover {
+            background: white;
+            color: #0b3d0b;
+        }
+        .signature {
+            font-size: 12px;
+            text-align: right;
+            opacity: 0.7;
+        }
+        .content img {
+            width: 100%;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .sidebar img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <img src="Images_XBOX/banner2.jpg" alt="Banner Xbox">
+    </div>
+    <div class="nav">
+        <a href="index.html">Página de Inicio</a>
+        <a href="Pag_PS.html">Página de PlayStation</a>
+        <a href="Pagina_Inicio_Xbox.html">Página de Xbox</a>
+    </div>
+    <div class="signature">By Rodrigo Heredia López</div>
+    <div class="container">
+        <div class="sidebar">
+            <h3>Consolas Xbox</h3>
+            <p>Aquí puedes encontrar información sobre diferentes modelos de Xbox.</p>
+            <img src="Images_XBOX/xbox_PrimeraGen.jpg" alt="Xbox Primera Gen">
+            <img src="Images_XBOX/xbox360.jpg" alt="Xbox 360">
+            <h3>Noticias de Xbox</h3>
+            <p><a href="https://es-us.finanzas.yahoo.com/noticias/bobby-kotick-recomend%C3%B3-microsoft-xbox-151842297.html" target="_blank" style="color: white; text-decoration: none;">Bobby Kotick recomendó a Microsoft y Xbox abandonar la industria, pues cree que les falta creatividad.</a></p>
+            <img src="yahoonoticia.jpg" alt="Yahoo Noticias">
+            <p><a href="https://vandal.elespanol.com/noticia/1350778388/fable-se-retrasa-el-esperado-rpg-de-xbox-ya-no-llega-este-ano-aunque-tiene-nuevo-gameplay/" target="_blank" style="color: white; text-decoration: none;">Xbox retrasa Fable: Su esperado RPG ya no llega este año, aunque a cambio enseña nuevo gameplay.</a></p>
+            <img src="vandalnoticia.jpg" alt="Vandal Noticias">
+        </div>
+        <div class="main-content">
+            <div class="content">
+                <img src="Images_XBOX/consola_xbox.jpg" alt="Consola Xbox">
+                <p>Xbox es una línea de consolas de videojuegos creada por Microsoft, cuyo origen se remonta al año 2000, cuando la compañía decidió incursionar en el mercado de los videojuegos para competir con Sony y Nintendo...</p>
+                <p>En 2005 llegó el Xbox 360, una consola que marcó una era con su mejora en gráficos, un robusto sistema de juego en línea y la introducción de los logros en videojuegos...</p>
+                <p>En 2013, Microsoft lanzó el Xbox One, con un enfoque inicial en el entretenimiento multimedia, lo que generó críticas por parte de los jugadores...</p>
+                <p>Finalmente, en 2020 llegaron el Xbox Series X y Xbox Series S, dos consolas de nueva generación con tiempos de carga ultrarrápidos...</p>
+            </div>
+            <div class="link-container" style="text-align: center; margin-top: 20px;">
+                <a href="Noticias_Xbox.html" class="news-button">Ir a las últimas noticias de Xbox</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
